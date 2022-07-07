@@ -1,31 +1,6 @@
 const btn = document.querySelector(".btn");
 const container = document.querySelector(".container");
 
-// btn.addEventListener("click", searchCats);
-
-// function searchCats(event) {
-//   fetch("https://api.thecatapi.com/v1/images/search")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       let arrContainer = Array.from(event.target.parentElement.children);
-//       arrContainer.forEach((element) => {
-//         if (element.classList.contains("cats")) {
-//           element.remove();
-//         }
-//       });
-//       let catUrl = data[0].url;
-//       let strUrl = catUrl.toString();
-//       let catDiv = document.createElement("div");
-//       let catImg = document.createElement("img");
-//       catDiv.className = "cats";
-//       catImg.className = "cat-gen-img";
-//       catImg.setAttribute("src", strUrl);
-//       catDiv.appendChild(catImg);
-//       container.appendChild(catDiv);
-//     })
-//     .catch((err) => console.log(err));
-// }
-
 function getCatimg(callback) {
   const request = new XMLHttpRequest();
 
